@@ -213,8 +213,8 @@ def lookup_profile():
                 'username': username,
                 'full_name': username.title(),
                 'biography': 'Instagram user',
-                'followers': 0,
-                'following': 0,
+                'follower_count': 0,
+                'following_count': 0,
                 'profile_pic_url': 'https://via.placeholder.com/150',
                 'is_verified': False,
                 'is_private': False
@@ -245,8 +245,8 @@ def lookup_profile():
                 'username': username,
                 'full_name': username.title(),
                 'biography': 'Instagram user',
-                'followers': 0,
-                'following': 0,
+                'follower_count': 0,
+                'following_count': 0,
                 'profile_pic_url': 'https://via.placeholder.com/150',
                 'is_verified': False,
                 'is_private': False
