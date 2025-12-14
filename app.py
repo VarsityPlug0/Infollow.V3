@@ -1,3 +1,7 @@
+# Monkey-patch gevent FIRST (before any other imports)
+from gevent import monkey
+monkey.patch_all()
+
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 from flask_socketio import SocketIO, emit
 from config import Config
