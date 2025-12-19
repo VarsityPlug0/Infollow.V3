@@ -15,7 +15,8 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 db.init_app(app)
-socketio = SocketIO(app, cors_allowed_origins="*", async_mode='gevent')
+# Configure SocketIO for Render deployment
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode='gevent', logger=True, engineio_logger=True)
 
 ig_automation = InstagramAutomation(session_folder=app.config['SESSION_FOLDER'])
 
